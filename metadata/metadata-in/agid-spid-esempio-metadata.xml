@@ -1,0 +1,65 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+  ID="_abr16rh65c35a2846z2uy286hj375846x19475ur" 
+  entityID="https://agid.spid.sample.metadata"
+  xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"
+    AuthnRequestsSigned="true" 
+    WantAssertionsSigned="true">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509SubjectName>emailAddress=rosini@agid.gov.it,CN=*.agid.gov.it,OU=Spid,O=AgID,L=Roma,ST=Roma,C=IT</ds:X509SubjectName>
+          <ds:X509Certificate>
+            MIIEejCCA2KgAwIBAgIJAI0CEIpDje7mMA0GCSqGSIb3DQEBCwUAMIGEMQswCQYDVQQGEwJJVDEN
+            MAsGA1UECBMEUm9tYTENMAsGA1UEBxMEUm9tYTENMAsGA1UEChMEQWdJRDENMAsGA1UECxMEU3Bp
+            ZDEWMBQGA1UEAxQNKi5hZ2lkLmdvdi5pdDEhMB8GCSqGSIb3DQEJARYScm9zaW5pQGFnaWQuZ292
+            Lml0MB4XDTE3MDMyODE2MjAwM1oXDTE4MDMyODE2MjAwM1owgYQxCzAJBgNVBAYTAklUMQ0wCwYD
+            VQQIEwRSb21hMQ0wCwYDVQQHEwRSb21hMQ0wCwYDVQQKEwRBZ0lEMQ0wCwYDVQQLEwRTcGlkMRYw
+            FAYDVQQDFA0qLmFnaWQuZ292Lml0MSEwHwYJKoZIhvcNAQkBFhJyb3NpbmlAYWdpZC5nb3YuaXQw
+            ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCq8vXLB4tcvN3ZXsoA5bfMUurySNWQfgvd
+            n7HaHsXLVfzNR/z4mQqykk06J2x6mxViuCTl9/flxE+8hyCdyk7VCwZVfAmLXpdvuz0iLY53RWWy
+            B1YayOm0Nx8WW0FVTlRUFfz4gzkI7pftBd7Utn65lkzlw1veaSt/GqtCVvM7o8yruOtCp1b1HKDq
+            iqwJVOa7TIGnUe1QamNRXtG2Ozs6/dHB0QXB/L8YzRP2weMIL69LvZVVuyNjMFdz41fmTSGgTUd4
+            myNtTDKpFcPpExkZh6BQe1ZOnxv5sVCXG8P9cTpf3s6WVUW2s4JZs6keTDlGXOEheKZVmG0nHYDs
+            RERHAgMBAAGjgewwgekwHQYDVR0OBBYEFNL7cgMZIkS3sB+mbtW4D/L3MxXOMIG5BgNVHSMEgbEw
+            ga6AFNL7cgMZIkS3sB+mbtW4D/L3MxXOoYGKpIGHMIGEMQswCQYDVQQGEwJJVDENMAsGA1UECBME
+            Um9tYTENMAsGA1UEBxMEUm9tYTENMAsGA1UEChMEQWdJRDENMAsGA1UECxMEU3BpZDEWMBQGA1UE
+            AxQNKi5hZ2lkLmdvdi5pdDEhMB8GCSqGSIb3DQEJARYScm9zaW5pQGFnaWQuZ292Lml0ggkAjQIQ
+            ikON7uYwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAS9iY99+JoHV7ItLsYJbjbc2C
+            +z98TaU7gh9hbzwRVIdAAsvUnts6h7ePzd4pxSLUKMqGBiv3aA++n0DNpJET99kT2M+p8aKXd5QD
+            3nBzc4sYi3oY79Rk34DjlaYKUOGiO5BLv5/G7wm5QYAYkWcVAv6cErbfD3xcMRjk7TmmbRE1iwfb
+            gD9ttoG0dXsbNYDHSVxcnnBTZc2euG1LFDU9rYdVKSDHGJJMIJltZgnsJQwxpWB7Ui5/D2DvTzx0
+            CsjrsnMx0Jrm9kyHImH6i+gWYjYYs1l0f6sfETO0VRK5ATbpNpSOkpSWQJqCkBMznxn3c6t6vUWo
+            pHNoUwd0qLSW1w==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+      Location="https://sp.uno/slo/post"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+      Location="https://sp.due/slo/post"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+      Location="https://sp.uno/acs/post" index="0" isDefault="true"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+      Location="https://sp.due/acs/post" index="1"/>
+    <md:AttributeConsumingService index="0">
+      <md:ServiceName xml:lang="it">Set 1</md:ServiceName>
+      <md:RequestedAttribute Name="spidCode"/>
+      <md:RequestedAttribute Name="name"/>
+      <md:RequestedAttribute Name="familyName"/>
+      <md:RequestedAttribute Name="fiscalNumber"/>
+    </md:AttributeConsumingService>
+    <md:AttributeConsumingService index="1">
+      <md:ServiceName xml:lang="it">Set 2</md:ServiceName>
+      <md:RequestedAttribute Name="spidCode"/>
+      <md:RequestedAttribute Name="fiscalNumber"/>
+    </md:AttributeConsumingService>
+  </md:SPSSODescriptor>
+  <md:Organization>
+    <md:OrganizationName xml:lang="it">AgID SPID Esempio Metadata</md:OrganizationName>
+    <md:OrganizationDisplayName xml:lang="it">Esempio Metadata</md:OrganizationDisplayName>
+    <md:OrganizationURL xml:lang="it">www.sp.test</md:OrganizationURL>
+  </md:Organization>
+</md:EntityDescriptor>
