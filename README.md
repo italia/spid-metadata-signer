@@ -56,7 +56,8 @@ Alla fine della procedura il metadata firmato sarà caricato nella cartella "met
 Lo script automatizza e semplifica il comando di firma metadata tramite XmlSecTool:
 
 Scaricare XmlSecTool:
-[http://shibboleth.net/downloads/tools/xmlsectool/latest/xmlsectool-2.0.0-bin.zip](http://shibboleth.net/downloads/tools/xmlsectool/latest/xmlsectool-2.0.0-bin.zip)
+* [Pacchetto precompilato](http://shibboleth.net/downloads/tools/xmlsectool/latest/xmlsectool-2.0.0-bin.zip)
+* via Homebrew (OS X): ```brew install xmlsectool```
 
 Impostare JAVA_HOME
 ```
