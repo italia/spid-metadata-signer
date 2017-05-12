@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e 
+
 echo -e "\n"
 echo "==============================================="
 echo "      AgID Agenzia per l'Italia Digitale       "
