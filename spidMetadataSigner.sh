@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e 
+
 echo -e "\n"
 echo "==============================================="
 echo "      AgID Agenzia per l'Italia Digitale       "
@@ -74,7 +76,7 @@ echo -e "\n"
 # Download e installazione XmlSecTool 2.0.0
 if [ ! -d "xmlsectool-2.0.0" ]; then
     echo "Scaricamento XmlSecTool 2.0.0:"
-    curl -OJ http://shibboleth.net/downloads/tools/xmlsectool/latest/xmlsectool-2.0.0-bin.zip
+    curl -OJ https://shibboleth.net/downloads/tools/xmlsectool/latest/xmlsectool-2.0.0-bin.zip
     unzip -qq xmlsectool-2.0.0-bin.zip
     rm -f xmlsectool-2.0.0-bin.zip
     echo -e "\n"
