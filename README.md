@@ -18,7 +18,7 @@ openssl req -x509 -sha256 -days 365 -newkey rsa:2048 -keyout nome-chiave.key -ou
 
 Per rimuovere la password alla chiave:
 ```
-openssl rsa -des3 -in your.key -out your.encrypted.key
+openssl rsa -in your.encrypted.key -out your.key
 ```
 
 Per aggiungere la password alla chiave:
