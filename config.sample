@@ -1,0 +1,14 @@
+# Nome del file nella directory metadata/metadata-in/
+metadataFileName="FederationMetadata.xml"
+
+# Nome del file nella directory certs/
+keyName="spidproxy-plain.key"
+
+# passphrase della chiave se presente
+keyPass=""
+
+# Nome del file nella directory certs/
+crtName="spidproxy.crt"
+
+# Path della JAVA_HOME
+javaHome="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home"

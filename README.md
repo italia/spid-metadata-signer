@@ -8,6 +8,7 @@ Per utilizzare lo script è necessario avere:
 * [XmlSecTool](http://shibboleth.net/downloads/tools/xmlsectool/latest/xmlsectool-2.0.0-bin.zip) (scaricato e verificato automaticamente dallo script)
 * Java
 * Unzip
+* curl
 * Metadata compliant alle [Regole Tecniche SPID](http://spid-regole-tecniche.readthedocs.io/en/latest/)
 * Chiave e certificato di firma (va bene anche quello utilizzato per la firma delle asserzioni saml)
 
@@ -41,12 +42,16 @@ __Nota__: lo script effettua un controllo dei requisiti software e parametri
 ./spidMetadataSigner.sh
 ```
 
+I parametri seguenti possono essere inseriti in un file da cui leggere i valori predefiniti ad ogni esecuzione, un esempio è riportato in ```config.sample```.
+Il file di impostazioni deve essere chiamato ```.config```, nella directory principale del progetto.
+
+
 Verranno richiesti i seguenti parametri:
 
-* nome del metadata da firmare (senza estensione - es: .xml)
-* nome della chiave (con estensione - es: .key)
+* nome del metadata da firmare (con estensione - es: FederationMetadata.xml)
+* nome della chiave (con estensione - es: firmaspidkey)
 * password della chiave, se presente, altrimenti lasciare vuota
-* nome del certificato (con estensione - es: .crt)
+* nome del certificato (con estensione - es: firmaspid.crt)
 * JAVA_HOME (se non presente) lo script suggerirà il path
 
 Alla fine della procedura il metadata firmato sarà caricato nella cartella "metadata/metadata-out"
