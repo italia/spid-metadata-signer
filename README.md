@@ -18,6 +18,8 @@ Per creare una chiave (con password) e un certificato:
 openssl req -x509 -sha256 -days 365 -newkey rsa:2048 -keyout nome-chiave.key -out nome-certificato.crt
 ```
 
+Nota bene: un certificato generato con questo comando avrà durata di 1 anno
+
 Per rimuovere la password alla chiave:
 ```
 openssl rsa -in your.encrypted.key -out your.key
