@@ -1,0 +1,46 @@
+<AttributeConsumingService index="0">
+      <ServiceName xml:lang="it">SetMinimum</ServiceName>
+      <ServiceDescription xml:lang="it">Attributi servizio minimi</ServiceDescription>
+      <RequestedAttribute Name="spidCode" />
+      <RequestedAttribute Name="familyName" />
+      <RequestedAttribute Name="name" />
+      <RequestedAttribute Name="gender" />
+      <RequestedAttribute Name="email" />
+      <RequestedAttribute Name="fiscalNumber" />
+</AttributeConsumingService>
+<AttributeConsumingService index="1">
+      <ServiceName xml:lang="it">SetMedium</ServiceName>
+      <ServiceDescription xml:lang="it">Attributi servizio medi</ServiceDescription>
+      <RequestedAttribute Name="spidCode" />
+      <RequestedAttribute Name="familyName" />
+      <RequestedAttribute Name="name" />
+      <RequestedAttribute Name="fiscalNumber" />
+      <RequestedAttribute Name="gender" />
+      <RequestedAttribute Name="companyName" />
+      <RequestedAttribute Name="registeredOffice" />
+      <RequestedAttribute Name="ivaCode" />
+      <RequestedAttribute Name="idCard" />
+      <RequestedAttribute Name="expirationDate" />
+      <RequestedAttribute Name="email" />
+      <RequestedAttribute Name="digitalAddress" />
+</AttributeConsumingService>
+<AttributeConsumingService index="2">
+      <ServiceName xml:lang="it">SetFull</ServiceName>
+      <ServiceDescription xml:lang="it">Attributi servizio totali</ServiceDescription>
+      <RequestedAttribute Name="spidCode" />
+      <RequestedAttribute Name="familyName" />
+      <RequestedAttribute Name="name" />
+      <RequestedAttribute Name="fiscalNumber" />
+      <RequestedAttribute Name="gender" />
+      <RequestedAttribute Name="dateOfBirth" />
+      <RequestedAttribute Name="placeOfBirth" />
+      <RequestedAttribute Name="countyOfBirth" />
+      <RequestedAttribute Name="companyName" />
+      <RequestedAttribute Name="registeredOffice" />
+      <RequestedAttribute Name="ivaCode" />
+      <RequestedAttribute Name="idCard" />
+      <RequestedAttribute Name="mobilePhone" />
+      <RequestedAttribute Name="email" />
+      <RequestedAttribute Name="address" />
+      <RequestedAttribute Name="digitalAddress" />
+</AttributeConsumingService>
