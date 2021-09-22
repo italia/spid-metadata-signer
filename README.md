@@ -6,7 +6,7 @@ Lo script permette di firmare un metadata SAML utilizzando [XmlSecTool](http://s
 Per utilizzare lo script è necessario avere:
 
 * [XmlSecTool](http://shibboleth.net/downloads/tools/xmlsectool/latest/xmlsectool-2.0.0-bin.zip) (scaricato e verificato automaticamente dallo script)
-* Java
+* Java Development Kit
 * Unzip
 * curl
 * Metadata compliant alle [Regole Tecniche SPID](http://spid-regole-tecniche.readthedocs.io/en/latest/)
